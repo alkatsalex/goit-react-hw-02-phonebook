@@ -1,5 +1,5 @@
 import css from "./ContactForm.module.css"
-const { Component } = require("react")
+import { Component } from "react";
 
 class ContactForm extends Component {
 
