@@ -36,7 +36,7 @@ export class App extends Component {
       id: nanoid(),
     }
 
-    const isDublicated = this.state.contacts.find((e) => e.name === data.name)
+    const isDublicated = this.state.contacts.find((e) => e.name.toLowerCase() === data.name.toLowerCase())
     if (isDublicated) {
       alert("This contact is already added")
       return
